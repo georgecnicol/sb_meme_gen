@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Mukta:wght@300&family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <!-- dark mode stuff -->
+    <ul id="header">
+    <li id="dark-mode-button"><div class = 'toggle-switch' >
+        <label class="toggle" id="toggle-label" for="checkbox">
+        <input type="checkbox" id="checkbox">
+        <span class="slider"></span>
+        <span class="toggle-labels" data-on="off" data-off="on"></span>
+        </label>
+        <span id="dmlabel">dark mode</span>
+        </div>
+        </li>
+    </ul>
+
+    <!-- begin assignment-->
+        <h1 class="title"><span class="title bigger-font">T</span>HE
+        <span class="title bigger-font">M</span>EME
+        <span class="title bigger-font">G</span>ENERATOR</h1></span>
+    </div>
+
+    <form id="form1">
+        <div id="form-container">
+
+        <label for="top-text">Top Text
+            <input placeholder="add text ..." name="top-text" id="top-text" type="text">
+        </label>
+
+        <label for="bot-text">Bottom Text
+            <input placeholder="add text ..." name="bot-text" id="bot-text" type="text">
+        </label>
+
+        <label for="image">Image
+            <input type="file" id="image" name="image" accept="image/png, image/jpeg"/>
+        </label>
+
+        </div>
+        <div id="submit"><p>
+        <input type="submit">
+        </p></div>
+    </form>
+
+    <div id="meme-storage">
+
+        <!-- sample meme
+        <div class="meme-to-store">
+            <img class="image-src" src="images/ms.png" alt="Generated meme from meme generator">
+            <div class="top-meme-text"> You miss 100 percent of the shots you don't take -Wayne Gretzky</div>
+            <div class="bot-meme-text"> -Michael Scott</div>
+            <button>remove</button>
+        </div>
+        -->
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
